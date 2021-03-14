@@ -9,9 +9,9 @@ const Stack = createStackNavigator<StackNavigationDetails>()
 const navigation = () => {
     return(
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home" screenOptions={{ headerTitleStyle:{alignSelf:'center'} }}>
+            <Stack.Navigator initialRouteName="Home" screenOptions={{ headerTitleStyle:{alignSelf:'flex-start'} }}>
                 <Stack.Screen name="Home" component={Home} />
-                <Stack.Screen name="CityDetails" component={CityDetails} options={{headerTitle: 'City Details',}} />
+                <Stack.Screen name="CityDetails" component={CityDetails} options={{headerTitle: 'City Details'}} />
             </Stack.Navigator>
         </NavigationContainer>
     )
