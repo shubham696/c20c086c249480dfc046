@@ -46,7 +46,7 @@ class CityDetails extends Component<cityScreenProps, cityStates> {
             <ScrollView style={styles.parentView}>
                 <Text style={[styles.titleStyle]}  numberOfLines={1} ellipsizeMode='tail' >{this.props.route.params.country_name} Details</Text>
                 {JSON.stringify(this.state.country_detatils[0]).length > 0 ?  <View style={styles.cityDetailsView}>
-                    <Text style={styles.infoTextStyle} numberOfLines={2} ellipsizeMode='tail'>capital : {this.state.country_detatils[0].capita ? this.state.country_detatils[0].capital : 'Not Avilable'}</Text>
+                    <Text style={styles.infoTextStyle} numberOfLines={2} ellipsizeMode='tail'>capital : {this.state.country_detatils[0].capital ? this.state.country_detatils[0].capital : 'Not Avilable'}</Text>
                     <Text style={styles.infoTextStyle}>population : {this.state.country_detatils[0].population ? this.state.country_detatils[0].population : 'Not Avilable'}</Text>
                     <Text style={styles.infoTextStyle}>latlng : {this.state.country_detatils[0].latlng ? this.state.country_detatils[0].latlng : 'Not Avilable'}</Text>
                     {this.state.country_detatils[0].flag && <View style={styles.weatherIconView}>
