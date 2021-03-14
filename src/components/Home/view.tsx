@@ -60,6 +60,7 @@ class Home extends Component<homeProps, homeStates> {
                 <TextInput
                     style={[styles.textInputStyle, this.state.country_name.length > 0 ? styles.activeColorFotTextInput: styles.inActiveColorFotTextInput]}
                     onChangeText={(txt)=>this.setState({country_name: txt})}
+                    placeholder="Enter country"
                 />
                 <TouchableOpacity onPress={this.getApiDetails} style={[styles.buttonStyle, this.state.country_name.length > 0 ? styles.buttonEnableColor : styles.buttonDisableColor]} >
                     <Text style={styles.buttonTextStyle}>

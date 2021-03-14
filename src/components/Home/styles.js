@@ -16,7 +16,7 @@ export default styles = StyleSheet.create({
         borderColor: Colors.black,
     },
     textInputStyle: {
-        width: Utils.setWidth(250),
+        width: '80%',
         height: Utils.setHeight(20),
         borderRadius: Utils.setWidth(50),
         borderWidth:1,
@@ -31,7 +31,7 @@ export default styles = StyleSheet.create({
         backgroundColor: Colors.navyBlue
     },
     buttonStyle: {
-        width: Utils.setWidth(150),
+        width: '40%',
         height: Utils.setHeight(20),
         borderRadius: Utils.setWidth(50),
         justifyContent:'center',
